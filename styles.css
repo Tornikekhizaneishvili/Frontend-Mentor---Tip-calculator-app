@@ -61,7 +61,7 @@ main {
     
 }
 
-.select-tip input {
+.select-tip input,.select-tip div {
     background-color: #00494d;
     color: white;
     width: 126px;
@@ -70,7 +70,9 @@ main {
     font-size: 21px;
     font-family: 'Space Mono', monospace;
     border-radius: 15px;
-
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
     
 
 }
@@ -82,8 +84,8 @@ main {
     
 }
 
-.select-tip input:last-child:focus {
-    background-color: hsl(172, 67%, 45%);
+.btn-active {
+    background-color: hsl(172, 67%, 45%) !important;
 }
 
 .select-tip input:last-child:hover {
@@ -140,6 +142,10 @@ main {
 
 .nop label {
     margin-bottom: 10px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nop input {
@@ -153,6 +159,19 @@ main {
     background-color: hsl(189, 41%, 97%);
     cursor: pointer;
 }
+
+.error {
+    font-size: 13px;
+    color: red; 
+    opacity: 0;
+}
+
+.error-show {
+    transition: opacity 1s sease-in-out;
+    opacity: 1;
+}
+
+
 
 .right-box {
     min-width: 50%;

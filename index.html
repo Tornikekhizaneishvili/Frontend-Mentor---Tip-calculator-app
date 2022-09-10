@@ -16,20 +16,20 @@
       <div class="left-box"> 
         <div class="bill">
           <label>Bill</label>
-          <input id ="bill-amount" type="text" placeholder="0">
+          <input id ="bill-amount" type="text" placeholder="0.0">
         </div>
         <label>Select Tip %</label>
-        <div class="select-tip" id="tip-amount">
-          <input type="button" value="5%">
-          <input type="button" value="10%">
-          <input type="button" value="15%">
-          <input type="button" value="20%">
-          <input type="button" value="50%">
-          <input type="text" placeholder="Custom">
+        <div class="select-tip">
+          <div class="tip">5%</div>
+          <div class="tip" >10%</div>
+          <div class="tip">15%</div>
+          <div class="tip">25%</div>
+          <div class="tip">50%</div>
+          <input  class="custom"type="text" placeholder="Custom">
         </div>
         <div class="nop">
-          <label>Number of People</label>
-          <input type="number" placeholder="0">
+          <label>Number of People <span class="error">Can't be zero</span></label>
+          <input id ="nop-amount" type="number" placeholder="1">
         </div>   
       </div>
       <div class="right-box">
@@ -38,17 +38,17 @@
             <h1>Tip Amount</h1>
             <p>/ person</p>
           </div>  
-          <span class="tipPerPerson">$0.00</span>
+          <span class="tipPerPerson" id="tipAmountPerson">$0.00</span>
         </div>  
         <div class="total-amount">
           <div>
             <h1>Total</h1>
             <p>/ person</p>
           </div>
-          <span class="tipPerPerson">$0.00</span>
+          <span class="tipPerPerson" id="totalAmountPerson">$0.00</span>
         </div>  
         <div class="reset-button">
-          <input  type="button" value="Reset">
+          <input  class="reset" type="button" value="Reset">
         </div>  
       </div>
     </form>
